@@ -20,6 +20,9 @@
 		4CA52CC61ED58E9C00126A5E /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA52CC41ED58E9C00126A5E /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4CA52CC81ED58EA700126A5E /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA52CC71ED58EA700126A5E /* SnapKit.framework */; };
 		4CA52CC91ED58EA700126A5E /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA52CC71ED58EA700126A5E /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4CA52CCC1ED5901200126A5E /* CTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA52CCB1ED5901200126A5E /* CTableViewCell.swift */; };
+		4CA52CCE1ED5908F00126A5E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA52CCD1ED5908F00126A5E /* Model.swift */; };
+		4CA52CD01ED590B900126A5E /* CTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA52CCF1ED590B900126A5E /* CTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +55,9 @@
 		4CA52CC11ED58E8E00126A5E /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		4CA52CC41ED58E9C00126A5E /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		4CA52CC71ED58EA700126A5E /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		4CA52CCB1ED5901200126A5E /* CTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTableViewCell.swift; sourceTree = "<group>"; };
+		4CA52CCD1ED5908F00126A5E /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4CA52CCF1ED590B900126A5E /* CTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,12 +99,15 @@
 		4CA52CA71ED58CF500126A5E /* CTableView */ = {
 			isa = PBXGroup;
 			children = (
-				4CA52CA81ED58CF500126A5E /* AppDelegate.swift */,
+				4CA52CCF1ED590B900126A5E /* CTableView.swift */,
+				4CA52CCB1ED5901200126A5E /* CTableViewCell.swift */,
+				4CA52CCD1ED5908F00126A5E /* Model.swift */,
 				4CA52CAA1ED58CF500126A5E /* ViewController.swift */,
 				4CA52CAC1ED58CF500126A5E /* Main.storyboard */,
 				4CA52CAF1ED58CF500126A5E /* Assets.xcassets */,
 				4CA52CB11ED58CF500126A5E /* LaunchScreen.storyboard */,
 				4CA52CB41ED58CF500126A5E /* Info.plist */,
+				4CA52CA81ED58CF500126A5E /* AppDelegate.swift */,
 			);
 			path = CTableView;
 			sourceTree = "<group>";
@@ -208,6 +217,9 @@
 			files = (
 				4CA52CAB1ED58CF500126A5E /* ViewController.swift in Sources */,
 				4CA52CA91ED58CF500126A5E /* AppDelegate.swift in Sources */,
+				4CA52CD01ED590B900126A5E /* CTableView.swift in Sources */,
+				4CA52CCC1ED5901200126A5E /* CTableViewCell.swift in Sources */,
+				4CA52CCE1ED5908F00126A5E /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
