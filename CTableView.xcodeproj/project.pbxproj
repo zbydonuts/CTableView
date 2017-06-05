@@ -23,6 +23,7 @@
 		4CA52CCC1ED5901200126A5E /* CTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA52CCB1ED5901200126A5E /* CTableViewCell.swift */; };
 		4CA52CCE1ED5908F00126A5E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA52CCD1ED5908F00126A5E /* Model.swift */; };
 		4CA52CD01ED590B900126A5E /* CTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA52CCF1ED590B900126A5E /* CTableView.swift */; };
+		7644B6071EE47A6400AF90B9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7644B6061EE47A6400AF90B9 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +59,7 @@
 		4CA52CCB1ED5901200126A5E /* CTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTableViewCell.swift; sourceTree = "<group>"; };
 		4CA52CCD1ED5908F00126A5E /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4CA52CCF1ED590B900126A5E /* CTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTableView.swift; sourceTree = "<group>"; };
+		7644B6061EE47A6400AF90B9 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				4CA52CB11ED58CF500126A5E /* LaunchScreen.storyboard */,
 				4CA52CB41ED58CF500126A5E /* Info.plist */,
 				4CA52CA81ED58CF500126A5E /* AppDelegate.swift */,
+				7644B6061EE47A6400AF90B9 /* TableViewController.swift */,
 			);
 			path = CTableView;
 			sourceTree = "<group>";
@@ -154,7 +157,7 @@
 				TargetAttributes = {
 					4CA52CA41ED58CF500126A5E = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = PF4FM2G4XA;
+						DevelopmentTeam = 2RNKT55WYW;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CA52CAB1ED58CF500126A5E /* ViewController.swift in Sources */,
+				7644B6071EE47A6400AF90B9 /* TableViewController.swift in Sources */,
 				4CA52CA91ED58CF500126A5E /* AppDelegate.swift in Sources */,
 				4CA52CD01ED590B900126A5E /* CTableView.swift in Sources */,
 				4CA52CCC1ED5901200126A5E /* CTableViewCell.swift in Sources */,
@@ -344,7 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PF4FM2G4XA;
+				DEVELOPMENT_TEAM = 2RNKT55WYW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -352,7 +356,7 @@
 				INFOPLIST_FILE = CTableView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhubingyi.CTableView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookiezby.CTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -362,7 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PF4FM2G4XA;
+				DEVELOPMENT_TEAM = 2RNKT55WYW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -370,7 +374,7 @@
 				INFOPLIST_FILE = CTableView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhubingyi.CTableView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookiezby.CTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

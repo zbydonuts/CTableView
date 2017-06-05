@@ -17,6 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var data = [String]()
     var tableView:UITableView!
     var count:Int = 0
+    var shouleFirstAnimate = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +31,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.transform = CGAffineTransform(scaleX: 1, y: -1)
-        self.tableView.register(CTableViewCell.self, forCellReuseIdentifier: "cell")
+        //self.tableView.transform = CGAffineTransform(scaleX: 1, y: -1)
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.tableView.separatorStyle = .none
         self.tableView.backgroundColor = UIColor.black
-        self.view.backgroundColor = .blue
+        self.view.backgroundColor = .white
         
+        let timer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(addData), userInfo: nil, repeats: true)
+        timer.fire()
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,29 +47,46 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     
-    func addData(){
-        
+    func addData() {
+        self.tableView.beginUpdates()
+        self.data.insert("test", at: 0)
+        self.shouleFirstAnimate = true
+        self.tableView.insertRows(at: [IndexPath(row:0,section:0)], with: .none)
+        self.tableView.endUpdates()
     }
-    
-    
-    
     
     // MARK: UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
-    
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CTableViewCell
-        //cell.nameLabel.text = self.data[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        cell.textLabel?.text = self.data[indexPath.row]
         //cell.transform = CGAffineTransform(scaleX: 1, y: -1)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if (indexPath.row == 0){
+            print("animate called")
+            cell.transform = cell.transform.translatedBy(x: -cell.frame.width, y: 0)
+            
+            UIView.animate(withDuration: 2.5, animations: {
+                cell.transform = cell.transform.translatedBy(x: cell.frame.width, y: 0)
+                cell.backgroundColor = .red
+                self.tableView.transform = self.tableView.transform.translatedBy(x: 0, y: -100)
+            })
+            self.shouleFirstAnimate = false
+        }
+    }
+    
+    private func customInsertCell() {
+        
     }
     
     
