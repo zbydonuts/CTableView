@@ -39,6 +39,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let timer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(addData), userInfo: nil, repeats: true)
         timer.fire()
+        
+        print("hahaha")
     }
 
     override func didReceiveMemoryWarning() {
