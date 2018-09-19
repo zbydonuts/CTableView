@@ -41,6 +41,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         timer.fire()
         
         print("hahaha")
+        print("hahaha2")
     }
 
     override func didReceiveMemoryWarning() {
